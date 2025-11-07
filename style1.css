@@ -1,0 +1,157 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://cdn.girls.buzz/images/girls.buzz.max-1440x900.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 20px;
+    background: rgba(23, 23, 23, 0.1);
+    border-radius: 15px;
+    border: 1px solid rgba(12, 12, 12, 0.2);
+    padding: 5px;
+}
+
+.search-bar {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    color: black;
+    padding: 10px 15px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search-bar::placeholder {
+    color: black;
+}
+
+.search-button {
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: background 0.2s ease-in-out;
+}
+
+.search-button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.weather-header .city {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.weather-header .date {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.weather-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.weather-icon i {
+    font-size: 4rem;
+    margin-right: 20px;
+}
+
+.temperature {
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(9, 9, 9, 0.3);
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.detail-item .label {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.detail-item .value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.detail-item .wind-speed {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.detail-item .humidity {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.detail-item .feels {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.hourly-forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(22, 21, 21, 0.3);
+}
+
+.hourly-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .hourly-item .hourly-icon i {
+    font-size: 2rem;
+    margin: 5px 0;
+} */
+
+.hourly-item .time,
+.hourly-item .hourly-temp {
+    font-size: 0.9rem;
+}
